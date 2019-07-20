@@ -13,6 +13,10 @@ export class Remote {
       this.door.closeDoor();
     } else {
       this.door.openDoor();
+
+      setTimeout(() => {
+        this.door.closeDoor();
+      }, 1000);
     }
   }
 }
